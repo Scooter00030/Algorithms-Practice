@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem #4</title>
+</head>
+<body>
+	<script>
+	var int = [];
+	var Arr2 = [];
+	var i, k;
+
+	function remove(arr){
+		for(i = 0; i < arr.length; i++){
+			if(int[arr[i]] === undefined){
+				int[arr[i]] = arr[i];
+			}
+		}
+		for(k = 0; k < int.length; k++){
+			if(int[k] != undefined){
+				Arr2.push(int[k]);
+			}
+		}
+		console.log(Arr2);
+	}
+arr1 = [1,1,2,3,1,2,3];
+remove(arr1);
+
+	</script>
+
+</body>
+</html>

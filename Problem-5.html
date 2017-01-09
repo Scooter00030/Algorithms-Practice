@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem #5</title>
+</head>
+<body>
+	<script>
+		var fox = "The quick brown fox";
+
+		function pigLat(sentence){
+			sentence = sentence.split(" ");
+				var str = "";
+
+		for(var i = 0; i < sentence.length; i++){
+			sentence[i].substring(1, sentence[i].length);
+			var word = sentence[i].substring(1, sentence[i].length) + sentence[i].substring(0,1) + "ay ";
+			str += word;
+		}	return str;
+	}
+	
+		var pig = pigLat(fox);
+		console.log(pig);
+
+		function reverse(sentence){
+			sentence = sentence.split(" ");
+			var str = "";
+
+		for(var i = 0; i < sentence.length; i++){
+			var firstletter = sentence[i].slice(sentence[i].length-3, sentence[i].length-2);
+			var word = sentence[i].slice(0,sentence[i].length-3);
+			word = firstletter + word + " ";
+			str += word;
+		}return str;
+	}
+	var normal = reverse(pig);
+	console.log(normal);
+		
+	</script>
+
+</body>
+</html>
